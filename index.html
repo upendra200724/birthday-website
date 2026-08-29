@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Surprise For Kusuma 💙</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Dancing+Script:wght@500;700&family=Noto+Sans+Kannada:wght@400;600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================================================================== -->
+<!-- STATE 1 — LOGIN / SURPRISE ENTRY SCREEN                             -->
+<!-- ================================================================== -->
+<div id="login-screen" class="login-screen">
+
+  <!-- floating ambient particles behind the login card -->
+  <div class="particles" id="login-particles" aria-hidden="true"></div>
+
+  <div class="login-card">
+    <div class="login-heart" aria-hidden="true">
+      <svg viewBox="0 0 32 29" class="heart-icon">
+        <path d="M16 28.5C16 28.5 1.5 19.7 1.5 9.9C1.5 4.9 5.4 1 10.2 1C13 1 15.2 2.4 16 4.4C16.8 2.4 19 1 21.8 1C26.6 1 30.5 4.9 30.5 9.9C30.5 19.7 16 28.5 16 28.5Z"/>
+      </svg>
+    </div>
+
+    <p class="login-eyebrow">A private little world</p>
+    <h1 class="login-title">A Little Surprise Awaits You <span>💙</span></h1>
+    <p class="login-subtitle">Only one special person can unlock this…</p>
+
+    <form id="login-form" class="login-form" autocomplete="off">
+      <div class="field">
+        <label for="name-input">Your Name</label>
+        <input type="text" id="name-input" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="field">
+        <label for="dob-input">Your Birthday</label>
+        <input type="text" id="dob-input" name="dob" placeholder="MMDD" maxlength="4" inputmode="numeric" required>
+      </div>
+
+      <button type="submit" class="unlock-btn">
+        <span>Unlock My Surprise</span> <span aria-hidden="true">💙</span>
+      </button>
+
+      <p class="login-error" id="login-error" role="alert" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<!-- ================================================================== -->
+<!-- STATE 2 — THE BIRTHDAY SURPRISE                                     -->
+<!-- ================================================================== -->
+<div id="surprise" class="surprise" aria-hidden="true">
+
+  <!-- Floating music toggle button. Replace audio/birthday-song.mp3 with your song. -->
+  <button id="music-toggle" class="music-toggle" aria-label="Play background music">
+    <span class="music-icon">🎵</span>
+  </button>
+  <audio id="bg-audio" loop preload="none">
+    <!-- 🔊 REPLACE THIS: put your song file at audio/birthday-song.mp3 -->
+    <source src="audio/birthday-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ---------------- NAVIGATION ---------------- -->
+  <header class="nav-wrap">
+    <nav class="nav" id="site-nav">
+      <span class="nav-brand">K<span>💙</span></span>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#message" class="nav-link">Message</a></li>
+        <li><a href="#memories" class="nav-link">Memories</a></li>
+        <li><a href="#kusuma" class="nav-link">Kusuma</a></li>
+        <li><a href="#special-memory" class="nav-link">Special Memory</a></li>
+        <li><a href="#blessings" class="nav-link">Blessings</a></li>
+        <li><a href="#final-wish" class="nav-link">Final Wish</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- floating hearts that drift across the whole surprise experience -->
+  <div class="floating-hearts" id="floating-hearts" aria-hidden="true"></div>
+
+  <!-- ============== SECTION 1 — BIRTHDAY WISH (HERO) ============== -->
+  <section id="home" class="section hero-section">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <p class="reveal eyebrow">SEPTEMBER 6</p>
+    <h1 class="reveal hero-title">Happy Birthday, Kusuma <span>🎂💙</span></h1>
+    <p class="reveal hero-line">Today isn't just another day…<br>Today is the day someone incredibly special came into this world.</p>
+
+  </section>
+
+  <!-- ============== SECTION 2 — A MESSAGE FROM KANDHA ============== -->
+  <section id="message" class="section message-section">
+    <h2 class="reveal section-title">A Message From Your Kandha <span>💙</span></h2>
+    <div class="letter-card reveal">
+      <p class="letter-text">
+        My dear Kusuma,<br><br>
+
+        I wanted today to feel different from every other day — because you deserve that, and honestly,
+        so much more. You are one of the most special people in my life, and I don't say that lightly. When
+        I think back on everything we've shared, it's never really the big moments that stand out the most.
+        It's the small ones — the late-night calls that turned into hours, the random memes you send that
+        somehow always make sense to only us, the comfort of just knowing you're there.<br><br>
+
+        I want you to be happy — genuinely, deeply happy — not just on your birthday, but every single day.
+        I'm so grateful for your presence in my life, for the way you understand me without needing an
+        explanation, and for choosing to share your world with me. Whatever comes your way, I want you to
+        know that I'll always stand beside you — through the good days and the hard ones, cheering you on
+        the whole way.<br><br>
+
+        On this birthday, I wish you success in everything you chase, happiness that stays even on the quiet
+        days, peace of mind when things get loud, and good health always. You mean more to me than I can
+        fit into words, but I hope you can feel it in everything I do.<br><br>
+
+        Happy Birthday once again, my Kusuma.<br>
+        No matter how many birthdays come and go, I will always be grateful that I get to celebrate you.<br><br>
+
+        With all my love,<br>
+        Your Kandha 💙
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 3 — MEMORIES ============== -->
+  <section id="memories" class="section memories-section">
+    <h2 class="reveal section-title">Our Little World <span>📸💙</span></h2>
+    <p class="reveal section-subtitle">Every picture holds a memory, and every memory holds a piece of us.</p>
+
+    <div class="memory-grid">
+
+      <!-- 1. Polaroid-style frame -->
+      <figure class="memory-frame frame-polaroid reveal">
+        <div class="frame-media">
+          <!-- 📷 REPLACE: images/couple1.jpg -->
+          <img src="images/couple1.jpg" alt="A memory of Kusuma and Kandha" loading="lazy">
+        </div>
+        <figcaption>The beginning of another beautiful memory.</figcaption>
+      </figure>
+
+      <!-- 2. Rounded portrait frame -->
+      <figure class="memory-frame frame-portrait reveal">
+        <div class="frame-media">
+          <!-- 📷 REPLACE: images/couple2.jpg -->
+          <img src="images/couple2.jpg" alt="A memory of Kusuma and Kandha" loading="lazy">
+        </div>
+        <figcaption>Just us.</figcaption>
+      </figure>
+
+      <!-- 3. Heart-shaped decorative frame -->
+      <figure class="memory-frame frame-heart reveal">
+        <div class="frame-media heart-clip">
+          <!-- 📷 REPLACE: images/couple3.jpg -->
+          <img src="images/couple3.jpg" alt="A memory of Kusuma and Kandha" loading="lazy">
+        </div>
+        <figcaption>One moment, a thousand feelings.</figcaption>
+      </figure>
+
+      <!-- 4. Landscape memory frame -->
+      <figure class="memory-frame frame-landscape reveal">
+        <div class="frame-media">
+          <!-- 📷 REPLACE: images/couple4.jpg -->
+          <img src="images/couple4.jpg" alt="A memory of Kusuma and Kandha" loading="lazy">
+        </div>
+        <figcaption>My favorite memories are the ones with you.</figcaption>
+      </figure>
+
+      <!-- 5. Film-strip style frame -->
+      <figure class="memory-frame frame-filmstrip reveal">
+        <div class="filmstrip-holes top" aria-hidden="true"></div>
+        <div class="frame-media">
+          <!-- 📷 REPLACE: images/couple5.jpg -->
+          <img src="images/couple5.jpg" alt="A memory of Kusuma and Kandha" loading="lazy">
+        </div>
+        <div class="filmstrip-holes bottom" aria-hidden="true"></div>
+        <figcaption>Frame by frame, a story worth keeping.</figcaption>
+      </figure>
+
+      <!-- 6. Large featured couple-photo frame -->
+      <figure class="memory-frame frame-featured reveal">
+        <div class="frame-media">
+          <!-- 📷 REPLACE: images/couple6.jpg -->
+          <img src="images/couple6.jpg" alt="A featured memory of Kusuma and Kandha" loading="lazy">
+        </div>
+        <figcaption>Us, in one of our best moments.</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ============== SECTION 4 — KUSUMA NAME MESSAGE ============== -->
+  <section id="kusuma" class="section kusuma-section">
+    <h2 class="reveal section-title">K · U · S · U · M · A</h2>
+
+    <div class="name-list">
+      <div class="name-row reveal">
+        <span class="name-letter">K</span>
+        <div class="name-copy"><h3>Kindness</h3><p>For the kindness you carry in your heart and the warmth you give to everyone around you.</p></div>
+      </div>
+      <div class="name-row reveal">
+        <span class="name-letter">U</span>
+        <div class="name-copy"><h3>Unique</h3><p>Because there is no one quite like you, and that's what makes you so special to me.</p></div>
+      </div>
+      <div class="name-row reveal">
+        <span class="name-letter">S</span>
+        <div class="name-copy"><h3>Smile</h3><p>Your smile has a way of making even ordinary moments feel beautiful.</p></div>
+      </div>
+      <div class="name-row reveal">
+        <span class="name-letter">U</span>
+        <div class="name-copy"><h3>Unforgettable</h3><p>Every moment with you becomes a memory I never want to forget.</p></div>
+      </div>
+      <div class="name-row reveal">
+        <span class="name-letter">M</span>
+        <div class="name-copy"><h3>Magical</h3><p>You bring a little magic into the simplest moments of my life.</p></div>
+      </div>
+      <div class="name-row reveal">
+        <span class="name-letter">A</span>
+        <div class="name-copy"><h3>Amazing</h3><p>Because you are truly amazing, inside and out.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 5 — SPECIAL MEMORY WITH HER FATHER ============== -->
+  <section id="special-memory" class="section special-memory-section">
+    <h2 class="reveal section-title quiet">A Memory That Will Always Live in Your Heart <span>🤍</span></h2>
+
+    <figure class="father-frame reveal">
+      <div class="frame-media">
+        <!-- 📷 REPLACE: images/father-kusuma.jpg (a photo of Kusuma and her father) -->
+        <img src="images/father.jpg" alt="Kusuma with her father" loading="lazy">
+      </div>
+      <figcaption>Some people may leave our sight, but they never leave our hearts.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============== SECTION 6 — BLESSING IN KANNADA FROM HER FATHER ============== -->
+  <section id="blessings" class="section blessings-section">
+    <h2 class="reveal section-title kannada">ಅಪ್ಪನ ಪ್ರೀತಿಯ ಆಶೀರ್ವಾದ <span>💙</span></h2>
+
+    <div class="kannada-card reveal">
+      <p class="kannada-text">
+        ನನ್ನ ಪ್ರೀತಿಯ ಮಗಳೇ,<br><br>
+        ಇಂದು ನಿನ್ನ ಹುಟ್ಟುಹಬ್ಬ, ಮತ್ತು ನನ್ನ ಹೃದಯ ಸಂತೋಷದಿಂದ ತುಂಬಿದೆ. ನೀನು ಯಾವಾಗಲೂ ಸಂತೋಷವಾಗಿರಬೇಕು,
+        ಯಾವುದೇ ಕಷ್ಟ ಬಂದರೂ ಧೈರ್ಯದಿಂದ ಎದುರಿಸಬೇಕು ಮತ್ತು ನಿನ್ನ ಮುಖದಲ್ಲಿ ಯಾವಾಗಲೂ ಮುಗುಳ್ನಗೆ ಇರಬೇಕು ಎಂಬುದೇ
+        ನನ್ನ ಆಸೆ.<br><br>
+        ನಿನ್ನ ಕನಸುಗಳನ್ನು ಸಾಧಿಸು, ಒಳ್ಳೆಯ ಮನುಷ್ಯಳಾಗಿ ಬಾಳು, ಮತ್ತು ಜೀವನದಲ್ಲಿ ಶಾಂತಿ ಹಾಗೂ ಸಂತೋಷ ಸದಾ
+        ನಿನ್ನ ಜೊತೆಗಿರಲಿ. ನಾನು ಎಲ್ಲಿಯೇ ಇದ್ದರೂ, ನನ್ನ ಪ್ರೀತಿ ಯಾವಾಗಲೂ ನಿನ್ನ ಹೃದಯದಲ್ಲಿ ಉಳಿಯುತ್ತದೆ.<br><br>
+        ಹುಟ್ಟುಹಬ್ಬದ ಹಾರ್ದಿಕ ಶುಭಾಶಯಗಳು, ಮಗಳೇ. ಯಾವಾಗಲೂ ಸಂತೋಷವಾಗಿರು.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 7 — FINAL MESSAGE FROM KANDHA ============== -->
+  <section id="final-wish" class="section final-section">
+    <h2 class="reveal section-title">One Last Thing… <span>💙</span></h2>
+
+    <div class="final-card reveal">
+      <p>
+        Kusuma, before today ends, I just want you to know how important you are to me — not just today,
+        but every day. I'm endlessly grateful to have you in my life, and I hope we get to create so many
+        more memories together, the kind we'll still be laughing about years from now. I want to see you
+        chase your dreams and reach them, and I'll be right there supporting you at every step. Your
+        happiness matters to me more than almost anything else, and today, I just want to see you smile.
+      </p>
+      <p class="final-signoff">
+        Happy Birthday, Kusuma. 🎂💙<br><br>
+        Keep smiling.<br>
+        Keep shining.<br>
+        Keep being the beautiful person you are.<br><br>
+        And remember…<br><br>
+        Wherever life takes us,<br>
+        I will always be cheering for you.<br><br>
+        With all my love,<br>
+        Your Kandha ❤️
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== FINAL ANIMATION ============== -->
+  <section class="section finale-section">
+    <h2 class="finale-title reveal">Happy Birthday, Kusuma <span>🎂💙</span></h2>
+    <div class="finale-canvas" id="finale-canvas" aria-hidden="true"></div>
+  </section>
+
+  <footer class="site-footer">
+    <p>made with 💙 by your Kandha</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
